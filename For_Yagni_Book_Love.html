@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Yagni — My Universe 📖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:
+    radial-gradient(circle at 20% 30%, #6a00ff55, transparent 45%),
+    radial-gradient(circle at 80% 40%, #ff4fd855, transparent 45%),
+    linear-gradient(180deg,#02010a,#060015,#000);
+  font-family:Poppins,sans-serif;
+  overflow:hidden;
+}
+.book{
+  width:92vw;
+  max-width:950px;
+  height:82vh;
+  max-height:620px;
+  position:relative;
+  perspective:2200px;
+}
+.page{
+  position:absolute;
+  inset:0;
+  background:#fffaf3;
+  border-radius:14px;
+  padding:55px 45px;
+  box-shadow:0 35px 90px rgba(0,0,0,.65);
+  transform-origin:left;
+  transition:transform 1.2s ease;
+}
+#p1{z-index:20}
+#p2{z-index:19}
+#p3{z-index:18}
+#p4{z-index:17}
+#p5{z-index:16}
+#p6{z-index:15}
+input{display:none}
+#c1:checked ~ .book #p1{transform:rotateY(-180deg)}
+#c2:checked ~ .book #p2{transform:rotateY(-180deg)}
+#c3:checked ~ .book #p3{transform:rotateY(-180deg)}
+#c4:checked ~ .book #p4{transform:rotateY(-180deg)}
+#c5:checked ~ .book #p5{transform:rotateY(-180deg)}
+h1{
+  font-family:'Great Vibes',cursive;
+  font-size:72px;
+  color:#b8860b;
+  text-align:center;
+}
+h2{
+  font-family:'Great Vibes',cursive;
+  font-size:56px;
+  color:#b8860b;
+  margin-bottom:18px;
+}
+p{
+  font-size:20px;
+  line-height:2;
+}
+.photos{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:18px;
+  margin-top:25px;
+}
+.photos img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:12px;
+  border:4px solid #b8860b;
+  box-shadow:0 0 35px rgba(184,134,11,.6);
+}
+label{
+  position:absolute;
+  bottom:25px;
+  right:35px;
+  font-size:18px;
+  color:#b8860b;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<input type="checkbox" id="c1">
+<input type="checkbox" id="c2">
+<input type="checkbox" id="c3">
+<input type="checkbox" id="c4">
+<input type="checkbox" id="c5">
+
+<div class="book">
+
+<div class="page" id="p1">
+  <h1>This Universe Is Built<br>Only For Yagni ✨</h1>
+  <p style="text-align:center;margin-top:30px">
+    A book of memories, feelings,<br>
+    and promises — written only for you.
+  </p>
+  <label for="c1">Next ➜</label>
+</div>
+
+<div class="page" id="p2">
+  <h2>The Beginning</h2>
+  <p>
+    Before you, my days were just days.
+    Then you came, and suddenly life had meaning.
+    Your smile became my peace,
+    and your presence became my home.
+  </p>
+  <div class="photos">
+    <img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56271.webp">
+    <img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56079.jpg">
+    <img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56078.jpg">
+  </div>
+  <label for="c2">Next ➜</label>
+</div>
+
+<div class="page" id="p3">
+  <h2>Our Memories</h2>
+  <p>
+    These moments are not just pictures.
+    They are pieces of my heart,
+    frozen in time, saved forever.
+  </p>
+  <div class="photos">
+    <img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56267.jpg">
+    <img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56266.jpg">
+    <img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56265.webp">
+  </div>
+  <label for="c3">Next ➜</label>
+</div>
+
+<div class="page" id="p4">
+  <h2>Moments I Cherish</h2>
+  <p>
+    Every smile, every glance,
+    every silent moment with you
+    is something my soul holds close.
+  </p>
+  <div class="photos">
+    <img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56264.webp">
+    <img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56262.jpg">
+    <img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56263.jpg">
+  </div>
+  <label for="c4">Next ➜</label>
+</div>
+
+<div class="page" id="p5">
+  <h2>My Promise</h2>
+  <p>
+    I may not promise perfection,
+    but I promise honesty,
+    loyalty, and a heart that chooses you
+    every single day.
+  </p>
+  <div class="photos">
+    <img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56259.png">
+    <img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56258.jpg">
+    <img src="https://uploads.onecompiler.io/44cvhfahm/44cwmvqzx/56256.jpg">
+  </div>
+  <label for="c5">Next ➜</label>
+</div>
+
+<div class="page" id="p6">
+  <h1>Forever & Always 💍</h1>
+  <p style="text-align:center;margin-top:25px">
+    Yagni,<br>
+    you are my love,<br>
+    my universe,<br>
+    my forever.
+  </p>
+</div>
+
+</div>
+</body>
+</html>
